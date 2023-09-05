@@ -7,7 +7,7 @@ function Hygrometer() {
   return (
     <section>
       <h2>Hygrometer</h2>
-      <div className="actual-humid">Actual Humidity: {"y"}%</div>
+      <div className="actual-humid">Actual Humidity: {humidity}%</div>
       <ReactSlider
         value={humidity}
         onAfterChange={(val) => {setHumidity(val)}}

@@ -22,6 +22,7 @@ function Thermometer() {
 
   
   useEffect(()=>timeout1, [desiredTemp])
+  
   return (
 
     

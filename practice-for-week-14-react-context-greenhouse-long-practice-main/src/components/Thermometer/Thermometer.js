@@ -8,10 +8,11 @@ function Thermometer() {
 
 
   const incrementTemp = () => {
+    
     if (desiredTemp > temperature){
-      temperature += 1
+      setTemperature(temperature +=1)
     } else if (desiredTemp < temperature){
-      temperature -= 1
+      setTemperature(temperature -=1)
     } else {
       clearTimeout(timeout1)
     }

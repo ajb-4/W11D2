@@ -21,7 +21,7 @@ function Greenhouse() {
       <LightSwitch />
       <ClimateStats />
     </section>
-    )
+    ) 
   } else if (themeName === "night") {
     return (
       <section>

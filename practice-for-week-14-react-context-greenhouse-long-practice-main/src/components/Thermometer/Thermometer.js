@@ -4,7 +4,7 @@ import { ClimateContext } from "../../context/ClimateContext";
 import { useClimate } from "../../context/ClimateContext";
 
 function Thermometer() {
-  const { temperature, setTemperature} = useClimate()
+  const { temperature, setTemperature} = useClimate();
   return (
     <section>
       <h2>Thermometer</h2>

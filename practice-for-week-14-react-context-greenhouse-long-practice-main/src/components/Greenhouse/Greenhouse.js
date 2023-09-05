@@ -11,8 +11,9 @@ function Greenhouse() {
 
   const { themeName, setThemeName } = useTheme();
 
-  return (
-    <section>
+  if (themeName === "day"){
+    return (
+      <section>
       <img  className='greenhouse-img'
             src={dayImage}
             alt='greenhouse' 
@@ -20,7 +21,34 @@ function Greenhouse() {
       <LightSwitch />
       <ClimateStats />
     </section>
-  );
+    )
+  } else if (themeName === "night") {
+    return (
+      <section>
+        <img  className='greenhouse-img'
+              src={nightImage}
+              alt='greenhouse' 
+        />
+        <LightSwitch />
+        <ClimateStats />
+      </section>
+    )
+  }
+
+  // return (
+  //   <section>
+  //     <img  className='greenhouse-img'
+  //           src={dayImage}
+  //           alt='greenhouse' 
+  //     />
+  //     <img  className='greenhouse-img'
+  //           src={dayImage}
+  //           alt='greenhouse' 
+  //     />
+  //     <LightSwitch />
+  //     <ClimateStats />
+  //   </section>
+  // );
 }
 
 export default Greenhouse;
